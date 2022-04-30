@@ -46,6 +46,7 @@ public class search_garbage_by_photo extends AppCompatActivity {
         ImageButton garbage_camera = findViewById(R.id.camera_Button);
 
 
+<<<<<<< HEAD
         String imgBase64 = "drawable://" + R.drawable.camera;
         if (TextUtils.isEmpty(imgBase64)){
         }
@@ -58,6 +59,20 @@ public class search_garbage_by_photo extends AppCompatActivity {
 
         //直接定义城市的地址
         String city_id = "310000";
+=======
+        /*String imgBase64 = "drawable://" + R.drawable.camera;
+        if (TextUtils.isEmpty(imgBase64)){
+        }*/
+
+
+        /*//获取时间戳——————————————————————————————————————————————————————————————————————————————————
+        long datas = System.currentTimeMillis();
+        long strNowDataTime = getCurrentTime(datas);
+        //获取时间戳——————————————————————————————————————————————————————————————————————————————————
+*/
+        //直接定义城市的地址
+        /*String city_id = "310000";
+>>>>>>> 0bf80c1 (Initial commit)
         //给secretkey+timeMD5加密————————————————————————————————————————————————————————————————————
         String md5 = "ac3f294250da776cbf2df73874c17e6e" + strNowDataTime;
         String sign = md5(md5);
@@ -75,8 +90,13 @@ public class search_garbage_by_photo extends AppCompatActivity {
             e.printStackTrace();
         }
         //定义快捷搜索中的请求体并输入数据—————————————————————————————————————————————————————————————————
+<<<<<<< HEAD
 
         new Thread(new Runnable() {
+=======
+*/
+        /*new Thread(new Runnable() {
+>>>>>>> 0bf80c1 (Initial commit)
             @SuppressLint("LongLogTag")
             @Override
             public void run() {
@@ -132,9 +152,15 @@ public class search_garbage_by_photo extends AppCompatActivity {
             //发送请求——————获取网络数据————————————————————————————————————————————————————————————————
 
             //发送请求——————获取网络数据———————解析数据—————————主线程进行UI操作显示数据——————————————————————
+<<<<<<< HEAD
     }
 
     //获取当前时间—————————————————————————————————————————————————————————————————————————————————————
+=======
+    }*/
+
+    /*//获取当前时间—————————————————————————————————————————————————————————————————————————————————————
+>>>>>>> 0bf80c1 (Initial commit)
     private long getCurrentTime(long datas) {
         long data1 = new Date().getTime();
         Log.d("ddddddddddddddddd", String.valueOf(data1));
@@ -177,4 +203,11 @@ public class search_garbage_by_photo extends AppCompatActivity {
     return result;
     }
     //图片转imgBase64格式—————————————————————————————————————————————————————————————————————————————
+<<<<<<< HEAD
+=======
+*/
+    }
+
+    ;
+>>>>>>> 0bf80c1 (Initial commit)
 }
