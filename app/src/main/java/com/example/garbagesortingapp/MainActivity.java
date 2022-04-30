@@ -249,11 +249,11 @@ public class MainActivity extends AppCompatActivity implements MyViewPager.OnVie
         //回收物品信息管理功能——————————————————————————————————————————————————————————————————————————
 
         //照片识别————————————————————————————————————————————————————————————————————————————————————
-        ImageButton camera = findViewById(R.id.camera);
+        /*ImageButton camera = findViewById(R.id.camera);
         camera.setOnClickListener(view -> {
             Intent intent = new Intent(MainActivity.this,search_garbage_by_photo.class);
             startActivity(intent);
-        });
+        });*/
         //照片识别————————————————————————————————————————————————————————————————————————————————————
 
     }

@@ -37,16 +37,19 @@ import java.util.Base64;
 import java.util.Date;
 
 @RequiresApi(api = Build.VERSION_CODES.O)
-public class search_garbage_by_photo extends AppCompatActivity {
+public class search_garbage_by_photo /*extends AppCompatActivity*/ {
+}
+/*
     @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.search_garbage_by_photo);
         ImageButton garbage_camera = findViewById(R.id.camera_Button);
+*/
 
 
-<<<<<<< HEAD
+/*<<<<<<< HEAD
         String imgBase64 = "drawable://" + R.drawable.camera;
         if (TextUtils.isEmpty(imgBase64)){
         }
@@ -59,7 +62,7 @@ public class search_garbage_by_photo extends AppCompatActivity {
 
         //直接定义城市的地址
         String city_id = "310000";
-=======
+=======*/
         /*String imgBase64 = "drawable://" + R.drawable.camera;
         if (TextUtils.isEmpty(imgBase64)){
         }*/
@@ -206,8 +209,9 @@ public class search_garbage_by_photo extends AppCompatActivity {
 <<<<<<< HEAD
 =======
 */
-    }
+ /*   }
 
     ;
 >>>>>>> 0bf80c1 (Initial commit)
-}
+}*/
+     /*   )*/
