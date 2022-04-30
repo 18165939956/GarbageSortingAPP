@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#cccccc"
+    android:orientation="vertical"
+    android:padding="15dp">
+    <include android:id="@+id/select"
+        layout="@layout/select" />
+
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="@string/quick_search"
+        android:background="@drawable/top_search"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#22BA45"
+        android:shadowRadius="1.0"
+        android:shadowColor="#4ccccc"
+        android:shadowDy="8"
+        android:shadowDx="5"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <Button
+        android:id="@+id/real_top_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/top_search"
+        android:background="@drawable/top_search"
+        android:textSize="30sp"
+        android:textColor="#22BA45"
+        android:textStyle="bold"
+        android:shadowRadius="1.0"
+        android:shadowColor="#4ccccc"
+        android:shadowDy="8"
+        android:shadowDx="5"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#cccccc">
+        <TextView
+            android:id="@+id/top_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E8E8E8"
+            />
+    </ScrollView>
+</LinearLayout>

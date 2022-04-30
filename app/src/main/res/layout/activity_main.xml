@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="?attr/myBgColor">
+    <!--android:background="#CCCCCC"-->
+
+
+    <include
+        android:id="@+id/select"
+        layout="@layout/select" />
+
+    <com.example.garbagesortingapp.MyViewPager
+        android:id="@+id/content_pager"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/select"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/camera"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/content_pager"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="75dp"
+        android:background="@drawable/camera" />
+
+
+    <ImageButton
+        android:id="@+id/history_search"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/content_pager"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="75dp"
+        android:background="@drawable/history_search" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/history_search"
+        android:text="        ·照片               ·查询历史               ·语音识别          ·回收物品信息"/>
+
+    <LinearLayout
+        android:id="@+id/points_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/content_pager"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/listener"
+        android:layout_width="56dp"
+        android:layout_height="47dp"
+        android:layout_below="@id/content_pager"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="77dp"
+        android:layout_toEndOf="@id/history_search"
+        android:background="@drawable/listener"
+        android:contentDescription="TODO" />
+
+    <ImageButton
+        android:id="@+id/garbage"
+        android:layout_width="56dp"
+        android:layout_height="47dp"
+        android:layout_below="@id/content_pager"
+        android:layout_marginStart="159dp"
+        android:layout_marginTop="76dp"
+        android:layout_toEndOf="@id/history_search"
+        android:background="@drawable/garbage_sort"
+        android:contentDescription="TODO" />
+
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/three_methods_to_search"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:textSize="32sp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="通过回收物品名字进行查询"
+        android:id="@+id/search_by_garbage_name"
+        android:layout_marginTop="40dp"
+        android:textSize="30sp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="通过物品回收时间进行查询"
+        android:id="@+id/search_by_garbage_time"
+        android:layout_marginTop="40dp"
+        android:textSize="30sp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="通过回收物品类别进行查询"
+        android:id="@+id/search_by_garbage_style"
+        android:layout_marginTop="40dp"
+        android:textSize="30sp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:id="@+id/back2"/>
+
+
+</LinearLayout>
